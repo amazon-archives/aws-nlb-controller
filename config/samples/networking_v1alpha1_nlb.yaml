@@ -1,0 +1,14 @@
+apiVersion: networking.amazonaws.com/v1alpha1
+kind: NLB
+metadata:
+  labels:
+    controller-tools.k8s.io: "1.0"
+  name: nlb-sample
+spec:
+  nodeport: 32212
+  protocol: TCP
+  listeners:
+    - port: 518
+      protocol: TCP
+    - port: 519
+      protocol: TCP
