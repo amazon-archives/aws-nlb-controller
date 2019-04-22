@@ -17,7 +17,7 @@ limitations under the License.
 package controller
 
 import (
-	"github.com/awslabs/aws-elb-controller/pkg/controller/nlb"
+	"github.com/awslabs/aws-nlb-controller/pkg/controller/nlb"
 )
 
 func init() {

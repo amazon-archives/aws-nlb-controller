@@ -25,8 +25,8 @@ import (
 	"github.com/aws/aws-sdk-go/service/autoscaling"
 	"github.com/aws/aws-sdk-go/service/autoscaling/autoscalingiface"
 
-	awsHelper "github.com/awslabs/aws-elb-controller/pkg/aws"
-	"github.com/awslabs/aws-elb-controller/pkg/finalizers"
+	awsHelper "github.com/awslabs/aws-nlb-controller/pkg/aws"
+	"github.com/awslabs/aws-nlb-controller/pkg/finalizers"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/session"
@@ -35,7 +35,7 @@ import (
 	"github.com/aws/aws-sdk-go/service/ec2"
 	"github.com/aws/aws-sdk-go/service/ec2/ec2iface"
 
-	networkingv1alpha1 "github.com/awslabs/aws-elb-controller/pkg/apis/networking/v1alpha1"
+	networkingv1alpha1 "github.com/awslabs/aws-nlb-controller/pkg/apis/networking/v1alpha1"
 	appsv1 "k8s.io/api/apps/v1"
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/errors"

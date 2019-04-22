@@ -1,5 +1,5 @@
-# aws-elb-controller
- The aws-elb-controller creates and manages AWS Network Loadbalancer's as Kubernetes Custom Resources.
+# aws-nlb-controller
+ The aws-nlb-controller creates and manages AWS Network Loadbalancer's as Kubernetes Custom Resources.
  This controller is built using the [kubebuilder](https://github.com/kubernetes-sigs/kubebuilder) framework. For more information [read their docs](https://book.kubebuilder.io/)
 
  ## Prerequisites
@@ -9,8 +9,8 @@ The controller uses the IAM Role of the eks nodes for creating the loadbalancers
 1. To create a nlb, first install the controller onto your cluster. 
 ```sh
 # Create ECR Repository
-aws ecr create-repository --repository-name aws-elb-controller
-export REPOSITORY=`aws ecr describe-repositories --repository-name aws-elb-controller | jq -r '.repositories[0].repositoryUri'`
+aws ecr create-repository --repository-name aws-nlb-controller
+export REPOSITORY=`aws ecr describe-repositories --repository-name aws-nlb-controller | jq -r '.repositories[0].repositoryUri'`
 
 # Build/tag the docker image
 IMG=${REPOSITORY}:latest make docker-build

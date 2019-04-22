@@ -1,3 +1,3 @@
 version: "1"
 domain: amazonaws.com
-repo: github.com/awslabs/aws-elb-controller
+repo: github.com/awslabs/aws-nlb-controller

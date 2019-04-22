@@ -25,8 +25,8 @@ import (
 	"github.com/aws/aws-sdk-go/aws/awserr"
 	"github.com/aws/aws-sdk-go/service/cloudformation"
 
-	networkingv1alpha1 "github.com/awslabs/aws-elb-controller/pkg/apis/networking/v1alpha1"
-	awsHelper "github.com/awslabs/aws-elb-controller/pkg/aws"
+	networkingv1alpha1 "github.com/awslabs/aws-nlb-controller/pkg/apis/networking/v1alpha1"
+	awsHelper "github.com/awslabs/aws-nlb-controller/pkg/aws"
 	"github.com/onsi/gomega"
 	"golang.org/x/net/context"
 	apierrors "k8s.io/apimachinery/pkg/api/errors"

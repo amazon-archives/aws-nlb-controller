@@ -20,9 +20,9 @@ import (
 	"flag"
 	"os"
 
-	"github.com/awslabs/aws-elb-controller/pkg/apis"
-	"github.com/awslabs/aws-elb-controller/pkg/controller"
-	"github.com/awslabs/aws-elb-controller/pkg/webhook"
+	"github.com/awslabs/aws-nlb-controller/pkg/apis"
+	"github.com/awslabs/aws-nlb-controller/pkg/controller"
+	"github.com/awslabs/aws-nlb-controller/pkg/webhook"
 	_ "k8s.io/client-go/plugin/pkg/client/auth/gcp"
 	"sigs.k8s.io/controller-runtime/pkg/client/config"
 	"sigs.k8s.io/controller-runtime/pkg/manager"

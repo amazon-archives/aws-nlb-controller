@@ -17,7 +17,7 @@ limitations under the License.
 package apis
 
 import (
-	"github.com/awslabs/aws-elb-controller/pkg/apis/networking/v1alpha1"
+	"github.com/awslabs/aws-nlb-controller/pkg/apis/networking/v1alpha1"
 )
 
 func init() {
